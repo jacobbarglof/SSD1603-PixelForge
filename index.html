@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSD1306 PixelForge</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="tool-body">
+    <div id="controls">
+      <button onclick="setTool('pixel')">
+        <img src="images/pixel.svg" alt="Draw Pixel">
+        <div class="tooltip"><span>Draw Pixel</span></div>
+      </button>
+      <button onclick="setTool('line')">
+        <img src="images/line.svg" alt="Draw Line">
+        <div class="tooltip"><span>Line</span></div>
+      </button>
+      <button onclick="setTool('rect')">
+        <img src="images/rectangle.svg" alt="Rectangle">
+        <div class="tooltip"><span>Rectangle</span></div>
+      </button>
+      <button onclick="setTool('fillRect')">
+        <img src="images/filled-rectangle.svg" alt="Filled Rectangle">
+        <div class="tooltip"><span>Filled Rectangle</span></div>
+      </button>
+      <button onclick="setTool('circle')">
+        <img src="images/circle.svg" alt="Circle">
+        <div class="tooltip"><span>Circle</span></div>
+      </button>
+      <button onclick="setTool('fillCircle')">
+        <img src="images/filled-circle.svg" alt="Filled Circle">
+        <div class="tooltip"><span>Filled Circle</span></div>
+      </button>
+      <button onclick="setTool('triangle')">
+        <img src="images/triangle.svg" alt="Triangle">
+        <div class="tooltip"><span>Triangle</span></div>
+      </button>
+      <button onclick="setTool('fillTriangle')">
+        <img src="images/filled-triangle.svg" alt="Filled Triangle">
+        <div class="tooltip"><span>Filled Triangle</span></div>
+      </button>
+      <button onclick="setTool('text')">
+        <img src="images/text.svg" alt="Text">
+        <div class="tooltip"><span>Text</span></div>
+      </button>
+      <button onclick="setTool('polygon')">
+        <img src="images/polygon.svg" alt="Polygon">
+        <div class="tooltip"><span>Polygon</span></div>
+      </button>
+      <button onclick="setTool('fillPolygon')">
+        <img src="images/filled-polygon.svg" alt="Filled Polygon">
+        <div class="tooltip"><span>Filled Polygon</span></div>
+      </button>
+      <select id="colorSelect" class="white" onchange="setColor()">
+        <option value="SSD1306_WHITE">White</option>
+        <option value="SSD1306_BLACK">Black</option>
+      </select>
+    </div>
+    <div id="main-content">
+      <div id="coordinates-display" style="color: white; margin-top: 10px;"></div>
+
+      <div id="canvas-container"></div>
+      <div class="buttons-sec">
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="exportCode()">Export Code</button>
+      </div>
+    </div>
+    <div id="sidebar">
+      <h2>Elements</h2>
+      <button class="new-group-btn" onclick="newGroupSelected()">New Group</button>
+      <div id="elements-list-c">
+        <div class="element-item">
+          <span>Isa</span>
+          <button onclick="deleteShape(0)">
+            <img src="images/delete.svg" alt="Delete Layer">
+          </button>
+        </div>
+      </div>
+    </div>
+    <textarea id="output" placeholder="Exported Code will appear here" readonly></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

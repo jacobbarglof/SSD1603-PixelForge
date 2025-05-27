@@ -1,0 +1,27 @@
+{
+  "name": "SSD1306PixelForge",
+  "version": "1.0.0",
+  "description": "Electron app for generating Adafruit SSD1306 graphics code",
+  "main": "main.js",
+  "author": "Jacob Barglof & haroonalisa",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.github.jacobbarglof.SSD1306PixelForge",
+    "productName": "SSD1306 PixelForge",
+    "icon": "assets/pixelforge_icon",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "@electron/remote": "^2.1.2",
+    "electron": "^28.2.3",
+    "electron-builder": "^24.13.3"
+  }
+}
