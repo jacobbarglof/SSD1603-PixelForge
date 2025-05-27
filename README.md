@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Build](https://img.shields.io/badge/build-stable-brightgreen)](#)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)](#)
+[![Platform](https://img.shields.io/badge/platform-Windows%20Linux-blue)](#)
 [![Made with Electron](https://img.shields.io/badge/made%20with-Electron-47848F?logo=electron&logoColor=white)](https://www.electronjs.org/)
 [![p5.js Powered](https://img.shields.io/badge/graphics-p5.js-orange)](https://p5js.org/)
 
